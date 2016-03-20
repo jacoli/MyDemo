@@ -2,9 +2,9 @@ require 'cocoapods-timeconsuming'
 require 'cocoapods-multithread-installpod'
 require 'cocoapods-podtarget-optimize'
 
-xcodeproj 'MyArch.xcodeproj'
+xcodeproj 'MyDemo.xcodeproj'
 
-target 'MyArch' do
+target 'MyDemo' do
 
 platform :ios, '7.0'
 
