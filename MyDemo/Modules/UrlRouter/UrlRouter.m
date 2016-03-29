@@ -7,6 +7,7 @@
 //
 
 #import "UrlRouter.h"
+#import "H5ContainerViewController.h"
 
 @interface UrlRouter ()
 
@@ -29,13 +30,26 @@ SINGLETON_IMPL(UrlRouter)
 }
 
 - (UIViewController *)viewControllerCreatedForUrl:(NSURL *)url {
-    NSString *urlStr = url.absoluteString;
-    NSString *clsName = self.url2ClsMap[urlStr];
-    Class cls = NSClassFromString(clsName);
-    if (cls && ([cls isSubclassOfClass:[UIViewController class]] || cls == UIViewController.class)) {
-        return [[cls alloc] init];
+    if (!url) {
+        return nil;
     }
     
+    NSString *scheme = url.scheme;
+    
+    if ([scheme isEqualToString:@"http"]) {
+        H5ContainerViewController *vc = [[H5ContainerViewController alloc] init];
+        vc.url = url;
+        return vc;
+    }
+    else if ([scheme isEqualToString:@"local"]) {
+        NSString *urlStr = url.absoluteString;
+        NSString *clsName = self.url2ClsMap[urlStr];
+        Class cls = NSClassFromString(clsName);
+        if (cls && ([cls isSubclassOfClass:[UIViewController class]] || cls == UIViewController.class)) {
+            return [[cls alloc] init];
+        }
+    }
+
     return nil;
 }
 

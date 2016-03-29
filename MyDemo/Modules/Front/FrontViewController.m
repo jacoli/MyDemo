@@ -80,9 +80,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //UIViewController *vc = [[UrlRouter sharedInstance] viewControllerCreatedForUrl:[NSURL URLWithString:self.models[indexPath.row]]];
-    
-    //[self.navigationController pushViewController:vc animated:YES];
+    ItemModel *model = self.model.items[indexPath.row];
+    UIViewController *vc = [[UrlRouter sharedInstance] viewControllerCreatedForUrl:[NSURL URLWithString:model.url]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
