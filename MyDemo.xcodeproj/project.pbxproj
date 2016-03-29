@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5A9B8E4B672928134F52F660 /* libPods-MyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 994213D00745FF702A1901F6 /* libPods-MyDemo.a */; };
+		B79F2BA31CAA59500076EE59 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BA21CAA59500076EE59 /* MainTabBarController.m */; };
+		B79F2BA61CAA5AE90076EE59 /* MyNaivgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BA51CAA5AE90076EE59 /* MyNaivgationController.m */; };
+		B79F2BA91CAA5C2A0076EE59 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BA81CAA5C2A0076EE59 /* FirstViewController.m */; };
+		B79F2BAC1CAA5C610076EE59 /* MyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BAB1CAA5C610076EE59 /* MyBaseViewController.m */; };
+		B79F2BAF1CAA5C920076EE59 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BAE1CAA5C920076EE59 /* SecondViewController.m */; };
+		B79F2BB21CAA5C9D0076EE59 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BB11CAA5C9D0076EE59 /* ThirdViewController.m */; };
+		B79F2BB51CAA5CAD0076EE59 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BB41CAA5CAD0076EE59 /* ForthViewController.m */; };
+		B79F2BB81CAA5CBC0076EE59 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BB71CAA5CBC0076EE59 /* FifthViewController.m */; };
 		B7F85AE51C9E53B400261902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AE41C9E53B400261902 /* main.m */; };
 		B7F85AE81C9E53B400261902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AE71C9E53B400261902 /* AppDelegate.m */; };
 		B7F85AEB1C9E53B400261902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AEA1C9E53B400261902 /* ViewController.m */; };
@@ -20,6 +28,22 @@
 		2874713FA57BF14C9889D544 /* Pods-MyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5A4313C87EF4B2D317EC1CFE /* Pods-MyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDemo/Pods-MyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		994213D00745FF702A1901F6 /* libPods-MyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79F2BA11CAA59500076EE59 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		B79F2BA21CAA59500076EE59 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		B79F2BA41CAA5AE90076EE59 /* MyNaivgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNaivgationController.h; sourceTree = "<group>"; };
+		B79F2BA51CAA5AE90076EE59 /* MyNaivgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNaivgationController.m; sourceTree = "<group>"; };
+		B79F2BA71CAA5C2A0076EE59 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B79F2BA81CAA5C2A0076EE59 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B79F2BAA1CAA5C610076EE59 /* MyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseViewController.h; sourceTree = "<group>"; };
+		B79F2BAB1CAA5C610076EE59 /* MyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseViewController.m; sourceTree = "<group>"; };
+		B79F2BAD1CAA5C920076EE59 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B79F2BAE1CAA5C920076EE59 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B79F2BB01CAA5C9D0076EE59 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B79F2BB11CAA5C9D0076EE59 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B79F2BB31CAA5CAD0076EE59 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
+		B79F2BB41CAA5CAD0076EE59 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		B79F2BB61CAA5CBC0076EE59 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		B79F2BB71CAA5CBC0076EE59 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 		B7F85AE01C9E53B400261902 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F85AE41C9E53B400261902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7F85AE61C9E53B400261902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +107,22 @@
 				B7F85AF11C9E53B400261902 /* LaunchScreen.storyboard */,
 				B7F85AF41C9E53B400261902 /* Info.plist */,
 				B7F85AE31C9E53B400261902 /* Supporting Files */,
+				B79F2BA11CAA59500076EE59 /* MainTabBarController.h */,
+				B79F2BA21CAA59500076EE59 /* MainTabBarController.m */,
+				B79F2BA41CAA5AE90076EE59 /* MyNaivgationController.h */,
+				B79F2BA51CAA5AE90076EE59 /* MyNaivgationController.m */,
+				B79F2BA71CAA5C2A0076EE59 /* FirstViewController.h */,
+				B79F2BA81CAA5C2A0076EE59 /* FirstViewController.m */,
+				B79F2BAA1CAA5C610076EE59 /* MyBaseViewController.h */,
+				B79F2BAB1CAA5C610076EE59 /* MyBaseViewController.m */,
+				B79F2BAD1CAA5C920076EE59 /* SecondViewController.h */,
+				B79F2BAE1CAA5C920076EE59 /* SecondViewController.m */,
+				B79F2BB01CAA5C9D0076EE59 /* ThirdViewController.h */,
+				B79F2BB11CAA5C9D0076EE59 /* ThirdViewController.m */,
+				B79F2BB31CAA5CAD0076EE59 /* ForthViewController.h */,
+				B79F2BB41CAA5CAD0076EE59 /* ForthViewController.m */,
+				B79F2BB61CAA5CBC0076EE59 /* FifthViewController.h */,
+				B79F2BB71CAA5CBC0076EE59 /* FifthViewController.m */,
 			);
 			path = MyDemo;
 			sourceTree = "<group>";
@@ -208,9 +248,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79F2BB51CAA5CAD0076EE59 /* ForthViewController.m in Sources */,
+				B79F2BAC1CAA5C610076EE59 /* MyBaseViewController.m in Sources */,
 				B7F85AEB1C9E53B400261902 /* ViewController.m in Sources */,
+				B79F2BB81CAA5CBC0076EE59 /* FifthViewController.m in Sources */,
+				B79F2BA91CAA5C2A0076EE59 /* FirstViewController.m in Sources */,
 				B7F85AE81C9E53B400261902 /* AppDelegate.m in Sources */,
+				B79F2BAF1CAA5C920076EE59 /* SecondViewController.m in Sources */,
+				B79F2BB21CAA5C9D0076EE59 /* ThirdViewController.m in Sources */,
+				B79F2BA31CAA59500076EE59 /* MainTabBarController.m in Sources */,
 				B7F85AE51C9E53B400261902 /* main.m in Sources */,
+				B79F2BA61CAA5AE90076EE59 /* MyNaivgationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
