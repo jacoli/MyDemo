@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="2544" y="2183"/>
         </scene>
-        <!--Fifth View Controller-->
+        <!--Tools View Controller-->
         <scene sceneID="dbR-FA-MuZ">
             <objects>
-                <viewController id="nG6-gH-SXW" customClass="FifthViewController" sceneMemberID="viewController">
+                <viewController id="nG6-gH-SXW" customClass="ToolsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WoO-t4-qzL"/>
                         <viewControllerLayoutGuide type="bottom" id="6zA-77-whV"/>
