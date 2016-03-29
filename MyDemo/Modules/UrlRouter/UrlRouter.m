@@ -23,6 +23,7 @@ SINGLETON_IMPL(UrlRouter)
     if (!_url2ClsMap) {
         _url2ClsMap = [[NSMutableDictionary alloc] init];
         _url2ClsMap[@"local://afn"] = @"AFNViewController";
+        _url2ClsMap[@"local://map"] = @"MapViewController";
         _url2ClsMap[@"local://tools"] = @"ToolsViewController";
     }
     

@@ -31,7 +31,7 @@
 
 - (NSArray *)models {
     if (!_models) {
-        _models = @[@"local://afn"];
+        _models = @[@"local://afn", @"local://map"];
     }
     
     return _models;
