@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="771" y="-1916"/>
         </scene>
-        <!--First View Controller-->
+        <!--Front View Controller-->
         <scene sceneID="rDN-Lj-dHe">
             <objects>
-                <viewController id="Sq6-fD-zhg" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="Sq6-fD-zhg" customClass="FrontViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qUd-IR-zgp"/>
                         <viewControllerLayoutGuide type="bottom" id="kDi-qU-xes"/>
