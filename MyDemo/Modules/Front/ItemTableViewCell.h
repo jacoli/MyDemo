@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageView+WebCache.h"
 
 @interface ItemTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) NSString *imgUrl;
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *location;
-@property (nonatomic, strong) NSString *price;
+@property (nonatomic, strong) UIImageView *itemPicImageView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *locationLabel;
+@property (nonatomic, strong) UILabel *priceLabel;
 
 @end

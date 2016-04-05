@@ -10,11 +10,13 @@
 #import "UrlRouter.h"
 #import "FrontModel.h"
 #import "ItemTableViewCell.h"
+#import "CellDataUpdater.h"
 
 @interface FrontViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) FrontModel *model;;
+@property (nonatomic, strong) FrontModel *model;
+@property (nonatomic, strong) CellDataUpdater *updater;
 
 @end
 
@@ -38,6 +40,14 @@
     }
     
     return _model;
+}
+
+- (CellDataUpdater *)updater {
+    if (!_updater) {
+        _updater = [[CellDataUpdater alloc] init];
+    }
+    
+    return _updater;
 }
 
 - (void)viewDidLoad {
@@ -70,10 +80,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ItemModel *model = self.model.items[indexPath.row];
     ItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemModel" forIndexPath:indexPath];
-    cell.imgUrl = model.picPath;
-    cell.title = model.title;
-    cell.location = model.location;
-    cell.price = [NSString stringWithFormat:@"%ld", [model.price longValue]];
+    [self.updater updateCell:cell withData:model];
     
     return cell;
 }

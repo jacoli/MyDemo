@@ -7,14 +7,8 @@
 //
 
 #import "ItemTableViewCell.h"
-#import "UIImageView+WebCache.h"
 
 @interface ItemTableViewCell ()
-
-@property (nonatomic, strong) UIImageView *itemPicImageView;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *locationLabel;
-@property (nonatomic, strong) UILabel *priceLabel;
 
 @end
 
@@ -61,22 +55,6 @@
     }
     
     return _priceLabel;
-}
-
-- (void)setImgUrl:(NSString *)imgUrl {
-    [self.itemPicImageView sd_setImageWithURL:[NSURL URLWithString:imgUrl]];
-}
-
-- (void)setTitle:(NSString *)title {
-    self.titleLabel.text = title;
-}
-
-- (void)setLocation:(NSString *)location {
-    self.locationLabel.text = location;
-}
-
-- (void)setPrice:(NSString *)price {
-    self.priceLabel.text = price;
 }
 
 - (void)layoutSubviews {

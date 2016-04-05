@@ -30,6 +30,7 @@
 		B79F2BE81CAA82180076EE59 /* FrontMockData in Resources */ = {isa = PBXBuildFile; fileRef = B79F2BE71CAA82180076EE59 /* FrontMockData */; };
 		B79F2BEC1CAA85320076EE59 /* H5ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BEB1CAA85320076EE59 /* H5ContainerViewController.m */; };
 		B79F2BEF1CAAA5760076EE59 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79F2BEE1CAAA5760076EE59 /* MapViewController.m */; };
+		B7A5469C1CB3D998002A86D2 /* CellDataUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A5469B1CB3D998002A86D2 /* CellDataUpdater.m */; };
 		B7F85AE51C9E53B400261902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AE41C9E53B400261902 /* main.m */; };
 		B7F85AE81C9E53B400261902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AE71C9E53B400261902 /* AppDelegate.m */; };
 		B7F85AEB1C9E53B400261902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F85AEA1C9E53B400261902 /* ViewController.m */; };
@@ -85,6 +86,8 @@
 		B79F2BEB1CAA85320076EE59 /* H5ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5ContainerViewController.m; sourceTree = "<group>"; };
 		B79F2BED1CAAA5760076EE59 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		B79F2BEE1CAAA5760076EE59 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B7A5469A1CB3D998002A86D2 /* CellDataUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDataUpdater.h; sourceTree = "<group>"; };
+		B7A5469B1CB3D998002A86D2 /* CellDataUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDataUpdater.m; sourceTree = "<group>"; };
 		B7F85AE01C9E53B400261902 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F85AE41C9E53B400261902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7F85AE61C9E53B400261902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				B79F2BE21CAA7AF50076EE59 /* ItemModel.m */,
 				B79F2BE41CAA7DE70076EE59 /* ItemTableViewCell.h */,
 				B79F2BE51CAA7DE70076EE59 /* ItemTableViewCell.m */,
+				B7A5469A1CB3D998002A86D2 /* CellDataUpdater.h */,
+				B7A5469B1CB3D998002A86D2 /* CellDataUpdater.m */,
 			);
 			path = Front;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				B7F85AEB1C9E53B400261902 /* ViewController.m in Sources */,
 				B79F2BD21CAA76970076EE59 /* NSArray+TBJSONModel.m in Sources */,
 				B79F2BDE1CAA7A840076EE59 /* FrontModel.m in Sources */,
+				B7A5469C1CB3D998002A86D2 /* CellDataUpdater.m in Sources */,
 				B79F2BD51CAA76970076EE59 /* TBJSONModelError.m in Sources */,
 				B79F2BEC1CAA85320076EE59 /* H5ContainerViewController.m in Sources */,
 				B7F85AE81C9E53B400261902 /* AppDelegate.m in Sources */,
