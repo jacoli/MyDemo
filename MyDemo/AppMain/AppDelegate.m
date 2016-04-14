@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MobClick.h"
+
+#import "Routable.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MobClick startWithAppkey:@"570e06b4e0f55a704e00256e" reportPolicy:BATCH channelId:@"local_build"];
+    [MobClick setLogEnabled:YES];
+    
+    Class cls = NSClassFromString(@"UMANUtil");
+    SEL deviceIDSelector = @selector(openUDIDString);
+    NSString *deviceID = nil;
+    if(cls && [cls respondsToSelector:deviceIDSelector]){
+        deviceID = [cls performSelector:deviceIDSelector];
+    }
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:nil];
+    
+    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+    
+    
+    [[Routable sharedRouter] map:@"login" toController:[UIViewController class]];
+    [[Routable sharedRouter]setNavigationController:(UINavigationController *)self.window.rootViewController];
+    
     return YES;
 }
 

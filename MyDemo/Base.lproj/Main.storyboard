@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Rzf-up-hUi" kind="relationship" relationship="rootViewController" id="qdC-c8-3n7"/>
+                        <segue destination="Rzf-up-hUi" kind="relationship" relationship="rootViewController" id="Fq2-q5-M7n"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3u-4z-6nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +142,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86o-qF-L33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698" y="292"/>
+            <point key="canvasLocation" x="1162" y="292"/>
         </scene>
     </scenes>
 </document>
