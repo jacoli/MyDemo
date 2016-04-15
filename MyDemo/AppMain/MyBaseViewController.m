@@ -15,6 +15,13 @@
 
 @implementation MyBaseViewController
 
+// params will be non-nil
+- (id)initWithRouterParams:(NSDictionary *)params {
+    if ((self = [self initWithNibName:nil bundle:nil])) {
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

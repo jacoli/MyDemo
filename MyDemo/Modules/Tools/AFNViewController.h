@@ -6,8 +6,8 @@
 //  Copyright © 2016年 lcg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MyBaseViewController.h"
 
-@interface AFNViewController : UIViewController
+@interface AFNViewController : MyBaseViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "ToolsViewController.h"
-#import "UrlRouter.h"
+#import "Routable.h"
 
 @interface ToolsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -31,7 +31,7 @@
 
 - (NSArray *)models {
     if (!_models) {
-        _models = @[@"local://afn", @"local://map"];
+        _models = @[@"afn", @"map", @"blur"];
     }
     
     return _models;
@@ -44,6 +44,8 @@
     self.title = @"Tools";
     
     [self.view addSubview:self.tableView];
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,7 +63,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = self.models[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"测试 ：%@", self.models[indexPath.row]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -70,9 +72,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    UIViewController *vc = [[UrlRouter sharedInstance] viewControllerCreatedForUrl:[NSURL URLWithString:self.models[indexPath.row]]];
-    
-    [self.navigationController pushViewController:vc animated:YES];
+    [[Routable sharedRouter] open:self.models[indexPath.row]];
 }
 
 @end

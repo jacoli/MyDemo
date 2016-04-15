@@ -17,6 +17,15 @@
 
 @implementation AppDelegate
 
+- (void)routerConfig {
+    [[Routable sharedRouter] map:@"login" toController:[UIViewController class]];
+    [[Routable sharedRouter]setNavigationController:(UINavigationController *)self.window.rootViewController];
+    
+    [[Routable sharedRouter] map:@"afn" toController:NSClassFromString(@"AFNViewController")];
+    [[Routable sharedRouter] map:@"map" toController:NSClassFromString(@"MapViewController")];
+    [[Routable sharedRouter] map:@"blur" toController:NSClassFromString(@"BlurViewController")];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -37,8 +46,7 @@
     NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
     
     
-    [[Routable sharedRouter] map:@"login" toController:[UIViewController class]];
-    [[Routable sharedRouter]setNavigationController:(UINavigationController *)self.window.rootViewController];
+    [self routerConfig];
     
     return YES;
 }
