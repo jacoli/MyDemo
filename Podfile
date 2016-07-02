@@ -1,6 +1,6 @@
-require 'cocoapods-timeconsuming'
-require 'cocoapods-multithread-installpod'
-require 'cocoapods-podtarget-optimize'
+#require 'cocoapods-timeconsuming'
+#require 'cocoapods-multithread-installpod'
+#require 'cocoapods-podtarget-optimize'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
